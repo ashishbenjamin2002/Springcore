@@ -1,0 +1,16 @@
+package com.score.lifcycle;
+
+import org.springframework.context.ApplicationContext;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AbstractApplicationContext context= new ClassPathxmlApplicationContext("com/score/lifcycle/config.xml");
+		depatment d1=(department)context.getBean("d1");
+		System.out.println(d1);
+		context.registerShutdownHook();
+
+	}
+
+}

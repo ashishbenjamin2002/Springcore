@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+
+<bean class="com.midsem.MidSem.Student" name="s1">
+	<property name = "Sname" value="Ashish"></property>
+	
+	<property name="Roll">
+		<list>
+			<value>22000221</value>
+			<value>22000223</value>
+			<value>22000224</value>
+			<value>22000226</value>
+			
+		</list></property>
+	
+	<property name="Course">
+		<value>DBMS</value>
+			e
+	</property>
+</bean>
+<bean class="com.midsem.MidSem.Student" name="s2">
+	<property name="Amount">
+		<value>120000</value>
+	</property>
+	<property name="Paymode">
+		<value>Online</value>
+	</property>
+</bean>
+
+
+</beans>
